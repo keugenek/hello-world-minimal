@@ -18,7 +18,7 @@ export default function Welcome() {
                         {auth.user ? (
                             <Link
                                 href={route('dashboard')}
-                                className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                                className="inline-block rounded-sm border border-red-300 px-5 py-1.5 text-sm leading-normal text-red-700 hover:border-red-400 hover:bg-red-50 dark:border-red-600 dark:text-red-300 dark:hover:border-red-500 dark:hover:bg-red-900/20"
                             >
                                 Dashboard
                             </Link>
@@ -26,13 +26,13 @@ export default function Welcome() {
                             <>
                                 <Link
                                     href={route('login')}
-                                    className="inline-block rounded-sm border border-transparent px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#19140035] dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]"
+                                    className="inline-block rounded-sm border border-transparent px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-red-300 hover:text-red-700 dark:text-[#EDEDEC] dark:hover:border-red-600 dark:hover:text-red-300"
                                 >
                                     Log in
                                 </Link>
                                 <Link
                                     href={route('register')}
-                                    className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                                    className="inline-block rounded-sm border border-red-300 px-5 py-1.5 text-sm leading-normal text-red-700 hover:border-red-400 hover:bg-red-50 dark:border-red-600 dark:text-red-300 dark:hover:border-red-500 dark:hover:bg-red-900/20"
                                 >
                                     Register
                                 </Link>
@@ -42,14 +42,14 @@ export default function Welcome() {
                 </header>
                 <div className="flex w-full items-center justify-center opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                     <main className="flex w-full max-w-[335px] flex-col-reverse lg:max-w-4xl lg:flex-row">
-                        <div className="flex-1 rounded-br-lg rounded-bl-lg bg-white p-6 pb-12 text-center shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] lg:rounded-tl-lg lg:rounded-br-none lg:p-20 dark:bg-[#161615] dark:text-[#EDEDEC] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d]">
-                            <h1 className="mb-4 text-4xl font-bold text-[#f53003] dark:text-[#FF4433]">
+                        <div className="flex-1 rounded-br-lg rounded-bl-lg bg-white p-6 pb-12 text-center shadow-[inset_0px_0px_0px_1px_rgba(239,68,68,0.2)] border border-red-100 lg:rounded-tl-lg lg:rounded-br-none lg:p-20 dark:bg-[#161615] dark:text-[#EDEDEC] dark:shadow-[inset_0px_0px_0px_1px_rgba(239,68,68,0.3)] dark:border-red-900/30">
+                            <h1 className="mb-4 text-4xl font-bold text-green-600 dark:text-green-400">
                                 Hello World!
                             </h1>
                             <p className="mb-8 text-lg text-[#706f6c] dark:text-[#A1A09A]">
                                 Welcome to your minimal Hello World application.
                             </p>
-                            <div className="rounded-lg bg-[#f8f8f7] p-6 dark:bg-[#1a1a19]">
+                            <div className="rounded-lg bg-red-50 p-6 border border-red-100 dark:bg-red-900/10 dark:border-red-900/30">
                                 <p className="text-sm text-[#706f6c] dark:text-[#A1A09A]">
                                     This is a simple Hello World application built with Laravel and React.
                                 </p>
